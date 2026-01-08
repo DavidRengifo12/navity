@@ -178,3 +178,28 @@ for(let i = 1 ; i <= empleados; i++){
 }
 
 console.log(`Total pagado por la empresa: ${totalEmpresa}`)*/
+
+
+let ciudades = parseInt(prompt('Ingrese la cantidad de ciudades de la republica:'))
+
+let VentasSoloDia = 0
+
+for(let i = 1; i < ciudades; i++){
+    let tiendas = parseFloat(prompt(`Ingrese las tiendas de la ciudad: ${i}`))
+    let ventasXCiudad = 0
+
+    for(j = 1; j <= tiendas; j++){
+        let nEmpleados = parseInt(prompt(`Ingresa la cantidad de empleados de la tienda ${j}`))
+        let ventasXTienda = 0
+        for(let x= 1; x < nEmpleados; x ++){
+            let ventasTiendita = parseFloat(prompt(`Realice el ingreso de venta por el empleado: ${x} de la tienda ${j}`))
+            ventasXTienda += ventasTiendita
+        }
+
+        ventasXCiudad += ventasXTienda
+        console.log(`Ventas de la tienda ${j}: ${ventasXTienda}`)
+    }
+    VentasSoloDia += ventasXCiudad
+    console.log(`Ventas de la ciudad ${i}: ${ventasXCiudad}`)
+}
+console.log(`Ventas totales del día: ${VentasSoloDia}`)
