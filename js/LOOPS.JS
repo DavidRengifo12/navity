@@ -177,7 +177,7 @@ for(let i = 1 ; i <= empleados; i++){
     console.log(`Total pagado por la empresa: ${sueldoPagar}}`)
 }
 
-console.log(`Total pagado por la empresa: ${totalEmpresa}`)*/
+console.log(`Total pagado por la empresa: ${totalEmpresa}`)
 
 
 let ciudades = parseInt(prompt('Ingrese la cantidad de ciudades de la republica:'))
@@ -203,3 +203,23 @@ for(let i = 1; i < ciudades; i++){
     console.log(`Ventas de la ciudad ${i}: ${ventasXCiudad}`)
 }
 console.log(`Ventas totales del día: ${VentasSoloDia}`)
+
+
+let salario = 1500
+
+let salarioCadaAnio = 0
+let salario6Anios = 0
+
+for(anio = 1; anio <= 6; anio++){
+
+    salario *= 1.10
+    salarioCadaAnio +=salario
+
+    salario6Anios +=salarioCadaAnio
+    console.log(`Salario del año ${anio}: $${salarioCadaAnio.toFixed(2)}`)
+}
+console.log(`El salario ahorrado durante los seis años fue: $${salario6Anios.toFixed(2)}`)*/
+
+
+
+
