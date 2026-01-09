@@ -218,7 +218,31 @@ for(anio = 1; anio <= 6; anio++){
     salario6Anios +=salarioCadaAnio
     console.log(`Salario del año ${anio}: $${salarioCadaAnio.toFixed(2)}`)
 }
-console.log(`El salario ahorrado durante los seis años fue: $${salario6Anios.toFixed(2)}`)*/
+console.log(`El salario ahorrado durante los seis años fue: $${salario6Anios.toFixed(2)}`)
+
+
+let cantidadNumeros = parseInt(prompt('Ingresa la cantida de numeros: '))
+
+let igualCero = 0
+let menorCero = 0
+let mayoresCero = 0
+
+for(let i = 1; i < cantidadNumeros; i++){
+    let numeros = parseInt(prompt(`Ingresa el numero ${i}: `))
+
+    if(numeros == 0){
+        igualCero ++
+    }
+    else if(numeros <0){
+        menorCero ++
+    }
+    else{
+        mayoresCero ++
+    }
+}
+console.log(`Igual a cero son: ${igualCero}`)
+console.log(`Menor a cero son: ${menorCero}`)
+console.log(`Mayor a cero son: ${mayoresCero}`)*/
 
 
 
