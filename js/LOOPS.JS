@@ -257,7 +257,34 @@ for(let i = 1; i <= dias; i++){
     ahorroDiario *= 3
 
 }
-console.log(ahorroAño)*/
+console.log(ahorroAño)
 
 
 
+
+
+let estudiantes = parseInt(prompt('Ingresa la cantidad de estudiantes: '))
+
+let aprobados = 0
+let recuperacion = 0
+let reprobados = 0
+
+for(let i = 1; i <= estudiantes; i++){
+    let calificaciones = parseFloat(prompt(`Coloque la nota del estudiante ${i}: `))
+    if(calificaciones > 4.0){
+        console.log(`El estudiante ${i} APROBO`)
+        aprobados ++
+    }
+    else if( calificaciones > 3.0 && calificaciones <= 4.0){
+        console.log(`El estudiante ${i} debe RECUPERAR`)
+        recuperacion ++
+    }
+    else{
+        console.log(`El estudiante ${i} REPROBO`)
+        reprobados ++
+    }
+}
+
+console.log('Aprobaron: ', aprobados)
+console.log('Deben entrar en recuperacion: ', recuperacion)
+console.log('Reprobaron: ', reprobados)*/
