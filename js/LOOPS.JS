@@ -288,3 +288,40 @@ for(let i = 1; i <= estudiantes; i++){
 console.log('Aprobaron: ', aprobados)
 console.log('Deben entrar en recuperacion: ', recuperacion)
 console.log('Reprobaron: ', reprobados)*/
+
+
+let cantidadArticulos = parseInt(prompt('Ingrese la cantidad de articulos: '))
+
+let totalDescuento = 0
+let valorCosto = 0
+
+for(let i = 1; i <= cantidadArticulos; i++){
+
+    let valorArticulo = parseFloat(prompt(`Ingrese el valor del articulo ${i}: `))
+    let descontar = 0
+
+    let precioFinal = 0
+
+    if(valorArticulo > 200){
+        descontar = valorArticulo * 0.15 
+    }else if(valorArticulo > 100 && valorArticulo <200){
+        descontar = valorArticulo * 0.12
+    }
+    else{
+        descontar = valorArticulo * 0.10
+    }
+
+    precioFinal = valorArticulo - descontar
+
+    totalDescuento +=descontar
+    valorCosto += precioFinal
+
+    
+    console.log(`Artículo ${i}`)
+    console.log(`Precio original: ${valorArticulo}`)
+    console.log(`Descuento: ${descontar}`)
+    console.log(`Precio a pagar: ${precioFinal}`)
+}
+
+console.log(`Total de descuento: ${totalDescuento}`)
+console.log(`Total a pagar: ${valorCosto}`)
