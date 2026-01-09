@@ -242,8 +242,22 @@ for(let i = 1; i < cantidadNumeros; i++){
 }
 console.log(`Igual a cero son: ${igualCero}`)
 console.log(`Menor a cero son: ${menorCero}`)
-console.log(`Mayor a cero son: ${mayoresCero}`)*/
+console.log(`Mayor a cero son: ${mayoresCero}`)
 
+
+
+let ahorroDiario = 3
+
+let dias = 365 
+
+let ahorroAño = 0
+
+for(let i = 1; i <= dias; i++){
+    ahorroAño += ahorroDiario
+    ahorroDiario *= 3
+
+}
+console.log(ahorroAño)*/
 
 
 
