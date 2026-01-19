@@ -40,7 +40,7 @@ for(let i = 0; i< numbers.length; i++){
     if(numbers[i] > 10){
         console.log('Numeros mayores a 10', numbers[i])
     }
-}*/
+}
 
 let numbers = [1, 2, 3, 4, 5]
 
@@ -50,3 +50,17 @@ for(let i = 0; i < numbers.length; i++ ){
     sumar +=numbers[i]
 }
 console.log('Valor Final', sumar)
+
+
+let notas = [2.5, 3.5, 4.5, 5.0]
+
+let sumas = 0
+
+for(let i = 0; i <notas.length; i++){
+    sumas += notas[i]
+}
+
+let promedio = sumas / notas.length
+console.log(promedio)*/
+
+
