@@ -29,4 +29,7 @@ console.log(ultimo)
 
 
 let ultimito = numeros[6]
-console.log(ultimito)*/
+console.log(ultimito)
+
+let array = [1, 2, 3]
+console.log('Array tiene 3 elementos', array.length)*/
