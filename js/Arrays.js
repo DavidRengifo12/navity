@@ -20,4 +20,13 @@ let names = ['Messi', 'James', 'Dibu', 'Cristiano']
 
 for(let i = 0; i <names.length; i++){
     console.log('Names elementos array', names[i])
-}*/
+}
+
+let numeros = [10, 9, 8, 7, 6, 5, 4]
+
+let ultimo = numeros[numeros.length - 1]
+console.log(ultimo)
+
+
+let ultimito = numeros[6]
+console.log(ultimito)*/
