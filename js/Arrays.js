@@ -32,7 +32,7 @@ let ultimito = numeros[6]
 console.log(ultimito)
 
 let array = [1, 2, 3]
-console.log('Array tiene 3 elementos', array.length)*/
+console.log('Array tiene 3 elementos', array.length)
 
 let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 
@@ -40,4 +40,13 @@ for(let i = 0; i< numbers.length; i++){
     if(numbers[i] > 10){
         console.log('Numeros mayores a 10', numbers[i])
     }
+}*/
+
+let numbers = [1, 2, 3, 4, 5]
+
+let sumar = 0
+
+for(let i = 0; i < numbers.length; i++ ){
+    sumar +=numbers[i]
 }
+console.log('Valor Final', sumar)
