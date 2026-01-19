@@ -63,4 +63,17 @@ for(let i = 0; i <notas.length; i++){
 let promedio = sumas / notas.length
 console.log(promedio)*/
 
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+let pares = 0
+
+for(let i = 0; i< numeros.length; i++){
+
+    if(numeros[i] %2 == 0){
+        console.log('Estos son numeros pares:',numeros[i])
+        pares ++
+    }
+    
+}
+console.log('La cantidad de opares en el array son:',pares)
 
