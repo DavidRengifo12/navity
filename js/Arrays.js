@@ -61,7 +61,7 @@ for(let i = 0; i <notas.length; i++){
 }
 
 let promedio = sumas / notas.length
-console.log(promedio)*/
+console.log(promedio)
 
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
@@ -76,4 +76,19 @@ for(let i = 0; i< numeros.length; i++){
     
 }
 console.log('La cantidad de opares en el array son:',pares)
+
+
+let numeros = [-1, -2, -3, -4, 5, 6, 7, 8, -9, -10]
+
+let negativos = 0
+
+for(let x = 0; x < numeros.length; x++){
+    if(numeros[x] < 0){
+        console.log('Numero negativo del array: ', numeros[x])
+        negativos ++
+    }
+}
+console.log('Cantidad de negativos en el array: ', negativos)*/
+
+
 
