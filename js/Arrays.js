@@ -14,4 +14,10 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 for(let x = 0; x < numbers.length; x++){
     console.log('Numeros elementos del array son: ', numbers[x])
+}
+
+let names = ['Messi', 'James', 'Dibu', 'Cristiano']
+
+for(let i = 0; i <names.length; i++){
+    console.log('Names elementos array', names[i])
 }*/
