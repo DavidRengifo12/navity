@@ -151,7 +151,16 @@ for(let x = 0; x < notas.length; x++){
 }
 
 let promedioAprobaron = sumaAprobados/aprobados
-console.log(`Promedio Aprobados`, promedioAprobaron)*/
+console.log(`Promedio Aprobados`, promedioAprobaron)
 
 
+let precios = [100, 200, 300, 400, 500]
 
+let count_5=0
+
+for(let z = 0; z < precios.length; z++){
+    if(precios[z] >= 200){
+        count_5 ++
+    }
+}
+console.log(`La cantidad de precios que tienen descuento son:${count_5}`)*/
