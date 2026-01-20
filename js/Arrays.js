@@ -163,4 +163,15 @@ for(let z = 0; z < precios.length; z++){
         count_5 ++
     }
 }
-console.log(`La cantidad de precios que tienen descuento son:${count_5}`)*/
+console.log(`La cantidad de precios que tienen descuento son:${count_5}`)
+
+let palabras = ['cristiano', 'uno', 'python', 'javascript', 'lewandoski', 'veinte', 'dos', 'tres']
+
+let palabrasCinco = 0
+
+for(let q = 0; q < palabras.length; q++){
+    if(palabras[q].length > 5){
+        palabrasCinco ++
+    }
+}
+console.log(`Cantidad de palabras con mas de 5 en su texto: ${palabrasCinco}`)*/
