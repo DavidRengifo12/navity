@@ -88,7 +88,15 @@ for(let x = 0; x < numeros.length; x++){
         negativos ++
     }
 }
-console.log('Cantidad de negativos en el array: ', negativos)*/
+console.log('Cantidad de negativos en el array: ', negativos)
 
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+let SumaMayores5 = 0
 
+for(let w = 0; w < numeros.length; w++){
+    if(numeros[w] > 5){
+        SumaMayores5 +=numeros[w]
+    }
+}
+console.log('Esta es la suma de los numeros que son mayores a 5:',SumaMayores5)*/
