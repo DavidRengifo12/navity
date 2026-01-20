@@ -132,5 +132,26 @@ for(let x = 0; x < notas.length; x++){
     }
 }
 console.log(`Estudiantes que aprobaron`, aprobados)
-console.log(`Reprobados fueron: `, reprobados)*/
+console.log(`Reprobados fueron: `, reprobados)
+
+let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 3.6]
+
+let aprobados = 0
+let sumaAprobados = 0
+
+
+
+for(let x = 0; x < notas.length; x++){
+    if(notas[x] >= 3){
+        sumaAprobados +=notas[x]
+        aprobados ++
+        
+    }
+    
+}
+
+let promedioAprobaron = sumaAprobados/aprobados
+console.log(`Promedio Aprobados`, promedioAprobaron)*/
+
+
 
