@@ -99,7 +99,7 @@ for(let w = 0; w < numeros.length; w++){
         SumaMayores5 +=numeros[w]
     }
 }
-console.log('Esta es la suma de los numeros que son mayores a 5:',SumaMayores5)*/
+console.log('Esta es la suma de los numeros que son mayores a 5:',SumaMayores5)
 
 let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 3.6]
 
@@ -113,3 +113,24 @@ for(let x = 0; x < notas.length; x++){
     }
 }
 console.log(`Estudiantes que aprobaron`, aprobados)
+
+
+let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 3.6]
+
+let aprobados = 0
+let reprobados = 0
+
+
+for(let x = 0; x < notas.length; x++){
+    if(notas[x] >= 3){
+        console.log('Notas superadas a 3: ', notas[x])
+        aprobados ++
+    }
+    else{
+        console.log('Notas menores a 3:', notas[x])
+        reprobados ++
+    }
+}
+console.log(`Estudiantes que aprobaron`, aprobados)
+console.log(`Reprobados fueron: `, reprobados)*/
+
