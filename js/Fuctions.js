@@ -23,7 +23,7 @@ const DevolverPromedio = (promedios) => {
 }
 
 let notas = [2.5, 3.5, 4.5, 5.0]
-console.log(DevolverPromedio(notas))*/
+console.log(DevolverPromedio(notas))
 
 
 const ElementosArray = (array) => {
@@ -36,4 +36,18 @@ const ElementosArray = (array) => {
 }
 
 let matriz = [1, 2, 3, 4, 5, 'XD' ]
-console.log('Cantidad de elementos del array:', ElementosArray(matriz))
+console.log('Cantidad de elementos del array:', ElementosArray(matriz))*/
+
+
+const numeroMayor = (array) => {
+    let mayor = array[0]
+
+    for(let i = 1; i < array.length; i++){
+        if(array[i] > mayor){
+            mayor = array[i]
+        }
+    }
+    return mayor
+}
+let matriz = [1, 2, 3, 4, 5, 10]
+console.log('El numero mayor es:',numeroMayor(matriz))
