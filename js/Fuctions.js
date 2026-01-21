@@ -169,7 +169,7 @@ function PromedioNotas(nota){
     return promedios
 }
 let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Promedio de las notas:',PromedioNotas(notas))*/
+console.log('Promedio de las notas:',PromedioNotas(notas))
 
 
 function DescuentosPrecios (price){
@@ -188,4 +188,19 @@ function DescuentosPrecios (price){
     return total_pagos
 }
 let dinero = [100, 200, 300]
-console.log('Valor a pagar:',DescuentosPrecios(dinero))
+console.log('Valor a pagar:',DescuentosPrecios(dinero))*/
+
+const Edades = (age) => {
+    let mayoresEdad = 0
+
+    for(let n = 0; n < age.length; n++){
+        if(age[n] >= 18){
+            console.log('edades mayores: ', age[n])
+            mayoresEdad ++
+        }
+    }
+    return mayoresEdad
+}
+
+let edades = [15, 28, 30, 17, 20, 18]
+console.log('Mayores de edad:',Edades(edades))
