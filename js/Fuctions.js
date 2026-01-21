@@ -100,7 +100,7 @@ function numerosNegativos(numbers){
 }
 
 let numeros = [1, 2, 3, -1, -2, -3]
-console.log('Cantidad de numeros negativos:', numerosNegativos(numeros))*/
+console.log('Cantidad de numeros negativos:', numerosNegativos(numeros))
 
 
 function Aprobados(noticas){
@@ -116,4 +116,20 @@ function Aprobados(noticas){
 }
 
 let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Cantidad de notas aprobadas:', Aprobados(notas))
+console.log('Cantidad de notas aprobadas:', Aprobados(notas))*/
+
+
+function Reprobados(notas){
+    let notasReprobados = 0
+
+    for(let i = 0; i < notas.length; i++){
+        if(notas[i] < 3){
+            console.log('Notas repodas son:', notas[i])
+            notasReprobados ++
+        }
+    }
+    return notasReprobados
+}
+
+let calificacion = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
+console.log('Cantidad de notas aprobadas:', Reprobados(calificacion))
