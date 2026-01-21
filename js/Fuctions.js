@@ -116,7 +116,7 @@ function Aprobados(noticas){
 }
 
 let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Cantidad de notas aprobadas:', Aprobados(notas))*/
+console.log('Cantidad de notas aprobadas:', Aprobados(notas))
 
 
 function Reprobados(notas){
@@ -132,4 +132,21 @@ function Reprobados(notas){
 }
 
 let calificacion = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Cantidad de notas aprobadas:', Reprobados(calificacion))
+console.log('Cantidad de notas aprobadas:', Reprobados(calificacion))*/
+
+
+function Mayores_A_X(numero){
+
+    let contarMayoresX = 0
+    let x = 10
+
+    for(let j = 0; j < numero.length; j++){
+        if(numero[j] > x){
+            console.log('Mayores que X son: ', numero[j])
+            contarMayoresX ++
+        }
+    }
+    return contarMayoresX
+}
+let numbers = [1, 2, 3, 50, 60]
+console.log('Cantidad de numeros mayores a X son:',Mayores_A_X(numbers))
