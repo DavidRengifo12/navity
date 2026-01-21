@@ -132,7 +132,7 @@ function Reprobados(notas){
 }
 
 let calificacion = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Cantidad de notas aprobadas:', Reprobados(calificacion))*/
+console.log('Cantidad de notas aprobadas:', Reprobados(calificacion))
 
 
 function Mayores_A_X(numero){
@@ -149,4 +149,24 @@ function Mayores_A_X(numero){
     return contarMayoresX
 }
 let numbers = [1, 2, 3, 50, 60]
-console.log('Cantidad de numeros mayores a X son:',Mayores_A_X(numbers))
+console.log('Cantidad de numeros mayores a X son:',Mayores_A_X(numbers))*/
+
+function PromedioNotas(nota){
+    let aprobaron = 0
+    let sumaAprobados = 0
+
+    for(let k = 0; k < nota.length; k++){
+        if(nota[k] > 3){
+            sumaAprobados +=nota[k]
+            aprobaron ++            
+            console.log('Aprueban: ', aprobaron)
+        }
+        
+        
+    }
+
+    let promedios = sumaAprobados / aprobaron
+    return promedios
+}
+let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
+console.log('Promedio de las notas:',PromedioNotas(notas))
