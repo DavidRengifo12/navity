@@ -1,5 +1,7 @@
 
-/*const sumaArray = (arraySumar) => {
+/*
+
+const sumaArray = (arraySumar) => {
     let sumaDelArray = 0
     for(let a = 0; a < arraySumar.length; a++){
         sumaDelArray += arraySumar[a]
@@ -82,7 +84,7 @@ function Pares(numeros){
 }
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log('Cantidad de numeros pares:',Pares(numbers))*/
+console.log('Cantidad de numeros pares:',Pares(numbers))
 
 
 function numerosNegativos(numbers){
@@ -98,4 +100,20 @@ function numerosNegativos(numbers){
 }
 
 let numeros = [1, 2, 3, -1, -2, -3]
-console.log('Cantidad de numeros negativos:', numerosNegativos(numeros))
+console.log('Cantidad de numeros negativos:', numerosNegativos(numeros))*/
+
+
+function Aprobados(noticas){
+    let contarAprobados = 0
+
+    for(let h = 0; h < noticas.length; h++){
+        if(noticas[h] >= 3){
+            console.log('Notas aprobadas:', noticas[h])
+            contarAprobados ++
+        }
+    }
+    return contarAprobados
+}
+
+let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
+console.log('Cantidad de notas aprobadas:', Aprobados(notas))
