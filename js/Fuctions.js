@@ -50,7 +50,7 @@ const numeroMayor = (array) => {
     return mayor
 }
 let matriz = [1, 2, 3, 4, 5, 10]
-console.log('El numero mayor es:',numeroMayor(matriz))*/
+console.log('El numero mayor es:',numeroMayor(matriz))
 
 
 const numeroMenor = (arrays) => {
@@ -65,4 +65,21 @@ const numeroMenor = (arrays) => {
 }
 
 let matriz = [10, 20, 30, 40, 50, 60]
-console.log('El numero menor es:',numeroMenor(matriz))
+console.log('El numero menor es:',numeroMenor(matriz))*/
+
+
+function Pares(numeros){
+    let contarPares = 0
+
+    for(let f = 0; f < numeros.length; f++){
+        if(numeros[f] %2 == 0){
+            contarPares ++
+            console.log('numeros pares:', numeros[f])
+        }
+    }
+    return contarPares
+
+}
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log('Cantidad de numeros pares:',Pares(numbers))
