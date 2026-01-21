@@ -188,7 +188,7 @@ function DescuentosPrecios (price){
     return total_pagos
 }
 let dinero = [100, 200, 300]
-console.log('Valor a pagar:',DescuentosPrecios(dinero))*/
+console.log('Valor a pagar:',DescuentosPrecios(dinero))
 
 const Edades = (age) => {
     let mayoresEdad = 0
@@ -203,4 +203,18 @@ const Edades = (age) => {
 }
 
 let edades = [15, 28, 30, 17, 20, 18]
-console.log('Mayores de edad:',Edades(edades))
+console.log('Mayores de edad:',Edades(edades))*/
+
+
+const PalabrasMasCinco = (wordls) => {
+    let palabrasCinco = 0
+
+    for(let o = 0; o < wordls.length; o++){
+        if(wordls[o].length > 5){
+            palabrasCinco ++
+        }
+    }
+    return palabrasCinco
+}
+let palabras = ['cristiano', 'uno', 'javascript', 'lewandoski', 'veinte', 'dos', 'tres']
+console.log(`Cantidad de palabras con mas de 5 en su texto: ${PalabrasMasCinco(palabras)}`)
