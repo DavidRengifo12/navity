@@ -65,7 +65,7 @@ const numeroMenor = (arrays) => {
 }
 
 let matriz = [10, 20, 30, 40, 50, 60]
-console.log('El numero menor es:',numeroMenor(matriz))*/
+console.log('El numero menor es:',numeroMenor(matriz))
 
 
 function Pares(numeros){
@@ -82,4 +82,20 @@ function Pares(numeros){
 }
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log('Cantidad de numeros pares:',Pares(numbers))
+console.log('Cantidad de numeros pares:',Pares(numbers))*/
+
+
+function numerosNegativos(numbers){
+    let contarNegativos = 0
+
+    for(let g = 0; g < numbers.length; g++){
+        if(numbers[g] < 0){
+            console.log('negativos: ', numbers[g])
+            contarNegativos ++
+        }
+    }
+    return contarNegativos
+}
+
+let numeros = [1, 2, 3, -1, -2, -3]
+console.log('Cantidad de numeros negativos:', numerosNegativos(numeros))
