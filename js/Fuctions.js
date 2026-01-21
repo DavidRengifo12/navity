@@ -149,7 +149,7 @@ function Mayores_A_X(numero){
     return contarMayoresX
 }
 let numbers = [1, 2, 3, 50, 60]
-console.log('Cantidad de numeros mayores a X son:',Mayores_A_X(numbers))*/
+console.log('Cantidad de numeros mayores a X son:',Mayores_A_X(numbers))
 
 function PromedioNotas(nota){
     let aprobaron = 0
@@ -169,4 +169,23 @@ function PromedioNotas(nota){
     return promedios
 }
 let notas = [2.5, 3.0, 4.2, 1.8, 5.0, 2.9]
-console.log('Promedio de las notas:',PromedioNotas(notas))
+console.log('Promedio de las notas:',PromedioNotas(notas))*/
+
+
+function DescuentosPrecios (price){
+    let total_pagos = 0
+
+    for(let l = 0; l < price.length; l++){
+        let descuento = 0
+        if(price[l] >= 100){
+            descuento = price[l] * 0.15
+            console.log('Descuento del:', descuento)
+        }
+
+        let precioFinal = price[l] - descuento
+        total_pagos +=precioFinal
+    }
+    return total_pagos
+}
+let dinero = [100, 200, 300]
+console.log('Valor a pagar:',DescuentosPrecios(dinero))
