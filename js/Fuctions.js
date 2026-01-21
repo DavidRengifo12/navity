@@ -36,18 +36,33 @@ const ElementosArray = (array) => {
 }
 
 let matriz = [1, 2, 3, 4, 5, 'XD' ]
-console.log('Cantidad de elementos del array:', ElementosArray(matriz))*/
+console.log('Cantidad de elementos del array:', ElementosArray(matriz))
 
 
 const numeroMayor = (array) => {
     let mayor = array[0]
 
-    for(let i = 1; i < array.length; i++){
-        if(array[i] > mayor){
-            mayor = array[i]
+    for(let d = 1; d < array.length; d++){
+        if(array[d] > mayor){
+            mayor = array[d]
         }
     }
     return mayor
 }
 let matriz = [1, 2, 3, 4, 5, 10]
-console.log('El numero mayor es:',numeroMayor(matriz))
+console.log('El numero mayor es:',numeroMayor(matriz))*/
+
+
+const numeroMenor = (arrays) => {
+    let menorcito = arrays[0]
+
+    for(let e = 1; e < arrays.length; e++){
+        if(arrays[e] < menorcito){
+            menorcito = arrays[e]
+        }
+    }
+    return menorcito
+}
+
+let matriz = [10, 20, 30, 40, 50, 60]
+console.log('El numero menor es:',numeroMenor(matriz))
