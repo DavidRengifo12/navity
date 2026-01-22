@@ -175,3 +175,17 @@ for(let q = 0; q < palabras.length; q++){
     }
 }
 console.log(`Cantidad de palabras con mas de 5 en su texto: ${palabrasCinco}`)*/
+
+function NewNegativos(negativos){
+    let nuevoArray = []
+
+    for(let i = 0; i < negativos.length; i++){
+        if(negativos[i]<0){
+            nuevoArray.push(negativos[i])
+        }
+    }
+    return nuevoArray
+}
+
+let numbers = [1, 2, 3, -1, -2]
+console.log(NewNegativos(numbers))
