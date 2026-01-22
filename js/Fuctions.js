@@ -203,7 +203,7 @@ const Edades = (age) => {
 }
 
 let edades = [15, 28, 30, 17, 20, 18]
-console.log('Mayores de edad:',Edades(edades))*/
+console.log('Mayores de edad:',Edades(edades))
 
 
 const PalabrasMasCinco = (wordls) => {
@@ -217,4 +217,19 @@ const PalabrasMasCinco = (wordls) => {
     return palabrasCinco
 }
 let palabras = ['cristiano', 'uno', 'javascript', 'lewandoski', 'veinte', 'dos', 'tres']
-console.log(`Cantidad de palabras con mas de 5 en su texto: ${PalabrasMasCinco(palabras)}`)
+console.log(`Cantidad de palabras con mas de 5 en su texto: ${PalabrasMasCinco(palabras)}`)*/
+
+function Negativo(number){
+    
+    for(let p = 0; p < number.length; p++){
+        if(number[p] < 0){
+            console.log('Booleanos:', number[p])
+            return true
+            
+        }
+    }
+    return false
+
+}
+let numbers = [-1, 2, -3]
+console.log(Negativo(numbers))
