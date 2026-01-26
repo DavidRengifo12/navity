@@ -232,7 +232,7 @@ function Negativo(number){
 
 }
 let numbers = [-1, 2, -3]
-console.log(Negativo(numbers))*/
+console.log(Negativo(numbers))
 
 
 
@@ -241,5 +241,24 @@ function ultimoElemento(elemento){
     return elementoUltimo
 }
 let numeros = [10, 9, 8, 7, 6, 5, 4, 22]
-console.log(`Ultimo elemento del array es:${ultimoElemento(numeros)}`)
+console.log(`Ultimo elemento del array es:${ultimoElemento(numeros)}`)*/
+
+
+
+function sumarPares(numbers){
+    let sumarPares = 0
+    let q = 0
+
+    while(q < numbers.length){
+        if(numbers[q] % 2 == 0){
+            sumarPares += numbers[q]
+        }
+        q++
+    }
+
+    return sumarPares
+}
+
+let numeros = [1,2,3,4,5,6]
+console.log(`La suma de los pares con while es: ${sumarPares(numeros)}`)
 
