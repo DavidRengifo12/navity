@@ -260,7 +260,7 @@ function sumarPares(numbers){
 }
 
 let numeros = [1,2,3,4,5,6]
-console.log(`La suma de los pares con while es: ${sumarPares(numeros)}`)*/
+console.log(`La suma de los pares con while es: ${sumarPares(numeros)}`)
 
 
 const mayores10 = (num) => {
@@ -277,5 +277,21 @@ const mayores10 = (num) => {
     return contarMayorA10
 }
 let numbersArray = [1, 2, 3, 10, 20, 25, 30]
-console.log(`NUMEROS CONTADOS MAYORES A DIEZ SON: ${mayores10(numbersArray)}`)
+console.log(`NUMEROS CONTADOS MAYORES A DIEZ SON: ${mayores10(numbersArray)}`)*/
+
+const arrayNegativos = (num) => {
+    let negativo = []
+    let s = 0
+
+    while(s < num.length){
+        if(num[s] < 0){
+            negativo.push(num[s])
+        }
+        s++
+    }
+    return negativo
+
+}
+let array = [1,-2]
+console.log(arrayNegativos(array))
 
