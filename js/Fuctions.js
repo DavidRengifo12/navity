@@ -241,7 +241,7 @@ function ultimoElemento(elemento){
     return elementoUltimo
 }
 let numeros = [10, 9, 8, 7, 6, 5, 4, 22]
-console.log(`Ultimo elemento del array es:${ultimoElemento(numeros)}`)*/
+console.log(`Ultimo elemento del array es:${ultimoElemento(numeros)}`)
 
 
 
@@ -260,5 +260,22 @@ function sumarPares(numbers){
 }
 
 let numeros = [1,2,3,4,5,6]
-console.log(`La suma de los pares con while es: ${sumarPares(numeros)}`)
+console.log(`La suma de los pares con while es: ${sumarPares(numeros)}`)*/
+
+
+const mayores10 = (num) => {
+    let contarMayorA10 = 0
+    let r = 0
+
+    while(r < num.length){
+       if(num[r] > 10){
+            contarMayorA10 ++
+       } 
+       r++
+    }
+
+    return contarMayorA10
+}
+let numbersArray = [1, 2, 3, 10, 20, 25, 30]
+console.log(`NUMEROS CONTADOS MAYORES A DIEZ SON: ${mayores10(numbersArray)}`)
 
