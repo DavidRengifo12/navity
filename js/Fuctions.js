@@ -217,7 +217,7 @@ const PalabrasMasCinco = (wordls) => {
     return palabrasCinco
 }
 let palabras = ['cristiano', 'uno', 'javascript', 'lewandoski', 'veinte', 'dos', 'tres']
-console.log(`Cantidad de palabras con mas de 5 en su texto: ${PalabrasMasCinco(palabras)}`)*/
+console.log(`Cantidad de palabras con mas de 5 en su texto: ${PalabrasMasCinco(palabras)}`)
 
 function Negativo(number){
     
@@ -232,4 +232,14 @@ function Negativo(number){
 
 }
 let numbers = [-1, 2, -3]
-console.log(Negativo(numbers))
+console.log(Negativo(numbers))*/
+
+
+
+function ultimoElemento(elemento){
+    let elementoUltimo = elemento[elemento.length - 1]
+    return elementoUltimo
+}
+let numeros = [10, 9, 8, 7, 6, 5, 4, 22]
+console.log(`Ultimo elemento del array es:${ultimoElemento(numeros)}`)
+
