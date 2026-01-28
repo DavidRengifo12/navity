@@ -277,7 +277,7 @@ const mayores10 = (num) => {
     return contarMayorA10
 }
 let numbersArray = [1, 2, 3, 10, 20, 25, 30]
-console.log(`NUMEROS CONTADOS MAYORES A DIEZ SON: ${mayores10(numbersArray)}`)*/
+console.log(`NUMEROS CONTADOS MAYORES A DIEZ SON: ${mayores10(numbersArray)}`)
 
 const arrayNegativos = (num) => {
     let negativo = []
@@ -293,5 +293,17 @@ const arrayNegativos = (num) => {
 
 }
 let array = [1,-2]
-console.log(arrayNegativos(array))
+console.log(arrayNegativos(array))*/
+
+//Recibir Area de un circulo
+
+function AreaCirculo(radio){
+    let PI = 3.14
+    let areaCirculo = PI * radio *radio
+    return areaCirculo
+}
+
+console.log('Area del circulo es: ',AreaCirculo(19))
+
+
 
