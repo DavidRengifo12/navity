@@ -305,5 +305,8 @@ function AreaCirculo(radio){
 
 console.log('Area del circulo es: ',AreaCirculo(19))
 
-
-
+const gFarenherit = (celsius) =>{
+    let grados_farenherit = (celsius * 9/5 ) + 32 
+    return grados_farenherit
+}
+console.log('Conversion de grados farenherit a celsius: ', gFarenherit(40))
