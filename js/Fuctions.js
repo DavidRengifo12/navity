@@ -324,3 +324,17 @@ const numMayor = (number) => {
 }
 let arrayOfnumbers = [1,2,10]
 console.log('Numero mayor del array: ', numMayor(arrayOfnumbers) )
+
+
+const numerosPares = (numbersPar) => { //Fcuncion felcha creadad pasando parametro
+    let arrayPares = [] //array nuevo donde va a tomar el valor del array modificado 
+    for(let x = 0; x < numbersPar.length; x++){ //Iteramos sobre el array 
+        if(numbersPar[x] % 2 == 0){ // condicion para calcular si los numeros son pares
+            arrayPares.push(numbersPar[x]) //si el numero es par usamos el metodo push para modificar el array original y que imprima el nuevo
+        }
+    }
+    return arrayPares // retornamos el resultado 
+}
+
+let pares = [1,2,3,4] //array de que va a pertenecer a la funcion
+console.log('Numeros pares del array son: ', numerosPares(pares))//Finalmente imprimimos por consola
