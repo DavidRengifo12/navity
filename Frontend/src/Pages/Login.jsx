@@ -9,7 +9,7 @@ export default function Login() {
     <>
     <main className='class-body'>
      <div className='wrapper'>
-        <form action="">
+        <form action="" >
             <h1 className='h1uno'>Login</h1>
             <div  className='input-box'>
                 <input type="text" placeholder='Username' required/> 
@@ -22,7 +22,6 @@ export default function Login() {
             </div>
             <div className='remember-forgot'>
                 <label><input type="checkbox" />Remenber me</label>
-                <a href=""> olvidar password</a>
                 <Link to='/'>Forgot Password</Link>
             </div>
             <button type='submit' className='btn'>Login</button>
