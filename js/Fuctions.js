@@ -353,5 +353,18 @@ const FactorialNumero = (n) => {
 console.log('Factorial Calculado', FactorialNumero(5))
 
 
+const sumaArrays = (numero) =>{
+    let acumularSuma = 0
+    let f = 0
+
+    while(f < numero.length){
+        acumularSuma += numero[f]
+        f++
+    }
+    return acumularSuma
+}
+
+let sumaArrayNumeros = [1,2,3]
+console.log(sumaArrays(sumaArrayNumeros))
 
 
