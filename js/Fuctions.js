@@ -310,3 +310,17 @@ const gFarenherit = (celsius) =>{
     return grados_farenherit
 }
 console.log('Conversion de grados farenherit a celsius: ', gFarenherit(40))
+
+
+const numMayor = (number) => {
+
+    let numeroMayor = number[0]
+    for(let i = 0; i < number.length; i++){
+        if(number[i] > numeroMayor ){
+            numeroMayor = number[i]
+        }
+    }
+    return numeroMayor
+}
+let arrayOfnumbers = [1,2,10]
+console.log('Numero mayor del array: ', numMayor(arrayOfnumbers) )
