@@ -293,7 +293,7 @@ const arrayNegativos = (num) => {
 
 }
 let array = [1,-2]
-console.log(arrayNegativos(array))*/
+console.log(arrayNegativos(array))
 
 //Recibir Area de un circulo
 
@@ -337,4 +337,19 @@ const numerosPares = (numbersPar) => { //Fcuncion felcha creadad pasando paramet
 }
 
 let pares = [1,2,3,4] //array de que va a pertenecer a la funcion
-console.log('Numeros pares del array son: ', numerosPares(pares))//Finalmente imprimimos por consola
+console.log('Numeros pares del array son: ', numerosPares(pares))//Finalmente imprimimos por consola*/
+
+const FactorialNumero = (n) => {
+   let facto = 1
+   let z = 1
+
+   while(z <= n){
+    facto *= z
+    z++
+   }
+   return facto
+   
+}
+console.log('Factorial Calculado', FactorialNumero(5))
+
+
