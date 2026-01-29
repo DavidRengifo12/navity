@@ -337,7 +337,7 @@ const numerosPares = (numbersPar) => { //Fcuncion felcha creadad pasando paramet
 }
 
 let pares = [1,2,3,4] //array de que va a pertenecer a la funcion
-console.log('Numeros pares del array son: ', numerosPares(pares))//Finalmente imprimimos por consola*/
+console.log('Numeros pares del array son: ', numerosPares(pares))//Finalmente imprimimos por consola
 
 const FactorialNumero = (n) => {
    let facto = 1
@@ -365,6 +365,16 @@ const sumaArrays = (numero) =>{
 }
 
 let sumaArrayNumeros = [1,2,3]
-console.log(sumaArrays(sumaArrayNumeros))
+console.log(sumaArrays(sumaArrayNumeros))*/
 
+
+const Palindromo = (text) => {
+    let palabraInvertida = ""
+   for(let g = text.length -1; g >= 0; g--){
+        palabraInvertida += text[g]
+   }
+   return text === palabraInvertida
+}
+let palabra = 'ojo'
+console.log(Palindromo(palabra))
 
