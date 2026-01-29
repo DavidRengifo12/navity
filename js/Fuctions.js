@@ -378,3 +378,10 @@ const Palindromo = (text) => {
 let palabra = 'ojo'
 console.log(Palindromo(palabra))
 
+//Número aleatorio: Implementa una función que genere un número 
+//aleatorio dentro de un rango especificado (entre un valor mínimo y un valor máximo). 
+
+const numeroAleatorio = (numberMin, numberMax) => {
+    return Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin
+}
+console.log(numeroAleatorio(1, 10))
