@@ -1,11 +1,12 @@
 import {BrowserRouter} from 'react-router-dom'
 import Login from './Pages/Login'
+import Page from './Page'
 
 export default function Routes() {
   return (
     <>
      <BrowserRouter>
-        <Login></Login>
+        <Page></Page>
      </BrowserRouter> 
     </>
   )
